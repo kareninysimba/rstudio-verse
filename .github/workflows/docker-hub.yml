@@ -30,7 +30,7 @@ jobs:
           context: latest
           file: latest/Dockerfile
           push: true
-          tags: davalfher/rstudio-verse:latest
+          tags: docker.io/davalfher/rstudio-verse:latest
       -
         name: Build and Push v4.2.0
         id: docker_build_four_two_zero
@@ -39,7 +39,7 @@ jobs:
           context: 4.2.0
           file: latest/Dockerfile
           push: true
-          tags: davalfher/rstudio-verse:4.2.0     
+          tags: docker.io/davalfher/rstudio-verse:4.2.0     
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
